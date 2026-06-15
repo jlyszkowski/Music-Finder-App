@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1b416518cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo"><i class="fa-solid fa-music"></i> MusicFinder</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Browse</a>
+        <button class="contact-btn">CONTACT</button>
+        <button id="theme-toggle">🌙</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>The World's Best <span>Music Database</span></h1>
+      <p>FIND YOUR FAVOURITE MUSIC WITH <span>MUSICFINDER</span></p>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by Artist, Song or Album"
+        />
+        <button id="search-btn">🔍</button>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="results-header">
+        <h2>Search results:</h2>
+        <select id="sort-select">
+          <option value="">Sort by...</option>
+          <option value="az">Album A to Z</option>
+          <option value="za">Album Z to A</option>
+          <option value="newest">Newest to Oldest</option>
+          <option value="oldest">Oldest to Newest</option>
+        </select>
+      </div>
+      <div class="music-grid" id="music-grid"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <i class="fa-solid fa-music"></i> MusicFinder
+      </div>
+      <p>© 2026 MusicFinder. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Browse</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
